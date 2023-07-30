@@ -5,7 +5,25 @@
 /* Ver se ta funcionando, não esquece */
 
 :root{
-
+    --preto: #000000;
+    --branco: #ffffff;
+    --body: #121212;
+    --bg: #151515;
+    --bg-scroll-bar: #1a1a1a;
+    --linha-divisoria: #272727;
+    --gradient-1: #D004D9;
+    --gradient-2: #9358f7;
+    --gradient-3: #10D7E2;
+    --principal-color: #00D2DF;
+    --border-icon: #02BBC5;
+    --hover: #9358f7;
+    --title: #e7e7e7;
+    --text: #C4C4C4;
+    --gradient-instagram-1: #7638FA;
+    --gradient-instagram-2: #D300C5C2;
+    --gradient-instagram-3: #FF0069;
+    --gradient-instagram-4: #FF7A00;
+    --gradient-instagram-5: #FFD600;
 }
 
 *{
