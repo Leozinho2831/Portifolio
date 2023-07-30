@@ -1,0 +1,21 @@
+@import url(header.css);
+@import url(main.css);
+@import url(footer.css);
+
+/* Ver se ta funcionando, não esquece */
+
+:root{
+
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Mulish', sans-serif;
+    transition: 0.3s ease-in-out;
+}
