@@ -31,9 +31,18 @@
     padding: 0;
     border: 0;
     box-sizing: border-box;
+
+    text-decoration: none;
+    list-style: none;
+}
+
+html{
+    scroll-behavior: smooth;
 }
 
 body{
     font-family: 'Mulish', sans-serif;
+    background-color: var(--body);
+
     transition: 0.3s ease-in-out;
 }
