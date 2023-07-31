@@ -1,8 +1,7 @@
 @import url(header.css);
+@import url(sidenav.css);
 @import url(main.css);
 @import url(footer.css);
-
-/* Ver se ta funcionando, não esquece */
 
 :root{
     --preto: #000000;
@@ -10,7 +9,8 @@
     --body: #121212;
     --bg: #151515;
     --bg-scroll-bar: #1a1a1a;
-    --linha-divisoria: #272727;
+    --border: #272727;
+    --bg-button: #272727;
     --gradient-1: #D004D9;
     --gradient-2: #9358f7;
     --gradient-3: #10D7E2;
@@ -24,6 +24,43 @@
     --gradient-instagram-3: #FF0069;
     --gradient-instagram-4: #FF7A00;
     --gradient-instagram-5: #FFD600;
+}
+
+@font-face {
+    font-family: Enwicken Typeface;
+    src: url(../Fonts/EnwickenTypeface\ Regular.ttf)
+    format(opentype);
+}
+
+@font-face {
+    font-family: Pamuci Regular;
+    src: url(../Fonts/Pamuci\ Regular.otf)
+    format(opentype);
+}
+
+@font-face {
+    font-family: Pamuci Bold;
+    src: url(../Fonts/Pamuci\ Bold.ttf)
+    format(truetype);
+}
+
+@keyframes textAnimation {
+    0% {
+        opacity: 0;
+    }
+
+    70%{
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+::-webkit-scrollbar{
+    color: var(--principal-color);
+    background: var(--bg-scroll-bar);
 }
 
 *{
@@ -43,6 +80,11 @@ html{
 body{
     font-family: 'Mulish', sans-serif;
     background-color: var(--body);
+    color: var(--branca);
 
     transition: 0.3s ease-in-out;
+}
+
+a{
+    color: var(--principal-color);
 }

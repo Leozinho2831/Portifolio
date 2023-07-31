@@ -1,0 +1,15 @@
+
+
+@media (min-width:750px){
+
+    .principal{
+        grid-area: main;
+    }
+
+}
+
+@media (min-width: 1200px){
+
+
+    
+}
