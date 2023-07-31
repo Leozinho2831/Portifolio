@@ -33,14 +33,14 @@
 }
 
 @font-face {
-    font-family: Pamuci Regular;
+    font-family: Pamuci;
     src: url(../Fonts/Pamuci\ Regular.otf)
     format(opentype);
 }
 
 @font-face {
-    font-family: Pamuci Bold;
-    src: url(../Fonts/Pamuci\ Bold.ttf)
+    font-family: Pamuci light;
+    src: url(../Fonts/Pamuci\ Thin.ttf)
     format(truetype);
 }
 
@@ -80,7 +80,6 @@ html{
 body{
     font-family: 'Mulish', sans-serif;
     background-color: var(--body);
-    color: var(--branca);
 
     transition: 0.3s ease-in-out;
 }

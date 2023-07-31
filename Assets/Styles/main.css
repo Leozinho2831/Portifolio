@@ -1,4 +1,41 @@
+.principal__name{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    padding: 40px;
+}
 
+.principal__name h1{
+    font-style: 24px;
+    font-weight: 400;
+    letter-spacing: 0.5px;
+    font-family: Pamuci;
+    color: var(--branco);
+}
+
+.principal__name h2{
+    font-size: 24px;
+    font-weight: 400;
+    letter-spacing: 0.5px;
+    font-family: Pamuci;
+    color: var(--principal-color);
+}
+
+.principal__name h3{
+    font-size: 24px;
+    font-weight: 400;
+    letter-spacing: 0.5px;
+    font-family: Pamuci;
+    color: var(--branco);
+}
+
+.principal__name h3 span{
+    font-size: 24px;
+    letter-spacing: 0.5px;
+    font-family: Pamuci light;
+    color: var(--branco);
+}
 
 @media (min-width:750px){
 

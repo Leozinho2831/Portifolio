@@ -19,8 +19,8 @@
     border-radius: 100%;
     border: 2px solid var(--principal-color);
 
-    width: 80px;
-    height: 80px;
+    width: 60px;
+    height: 60px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -30,6 +30,7 @@
 
 .sidenav__icon{
     transition: all 0.25s ease-in-out;
+    height: 34px;
 }
 
 .sidenav__text a{
@@ -42,7 +43,7 @@
 
 .sidenav__links li:hover{
     width: 140px;
-    height: 80px;
+    height: 60px;
 
     border: 2px solid var(--hover);
 }
@@ -54,7 +55,7 @@
 .sidenav__links li:hover .sidenav__text a{
     display: block;
 
-    font-size: 28px;
+    font-size: 25px;
     font-family: Enwicken Typeface;
     font-weight: 400;
     color: var(--hover);
@@ -82,10 +83,4 @@
         flex-direction: column;
     }
 
-}
-
-@media (min-width: 1200px){
-
-
-    
 }
