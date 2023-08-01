@@ -158,12 +158,145 @@
 
 .principal__languages{
     grid-area: languages;
-    align-self: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 15px;
+}
+
+.principal__languages h1{
+    font-size: 30px;
+    font-weight: 400;
+    letter-spacing: 0.5px;
+    font-family: Enwicken Typeface;
+    color: var(--title);
+    
+}
+
+.principal__languages h2{
+    font-size: 15px;
+    font-weight: 400;
+    letter-spacing: 0.5px;
+    font-family: Enwicken Typeface;
+    color: var(--title);
+    margin: 10px 0 0 0;
+}
+
+.principal__contato{
+    grid-area: contato;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     justify-self: center;
 }
 
-.principal__laguages h1{
-    color: var(--title);
+.contato__buttons{
+    display: flex;
+    gap: 40px;
+    margin: 15px;
+}
+
+.border-instagram,
+.border-linkedin,
+.border-github{
+    width: 53px;
+    height: 53px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 100%;
+
+    transition: transform 0.2s ease-in-out;
+}
+
+.border-instagram:hover,
+.border-linkedin:hover,
+.border-github:hover{
+    transform: scale(1.2);
+}
+
+.border-instagram{
+    background-image: linear-gradient(135deg,
+        var(--gradient-instagram-1),
+        var(--gradient-instagram-2),
+        var(--gradient-instagram-3),
+        var(--gradient-instagram-4),
+        var(--gradient-instagram-5));
+}
+
+.border-linkedin{
+    background-image: linear-gradient(135deg,
+        var(--hover),
+        var(--principal-color));
+}
+
+.border-github{
+    background-image: linear-gradient(135deg,
+        var(--gradient-git-1),
+        var(--gradient-git-2));
+}
+
+.border-instagram div, 
+.border-linkedin div, 
+.border-github div{
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 100%;
+    background-color: var(--bg-button);
+}
+
+.contato__buttons li a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.border-instagram img,
+.border-github img,
+.border-linkedin img{
+    width: 32px;
+    height: 32px;
+}
+
+.contato{
+    width: 200px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+    border-radius: 100px;
+    border: 1px solid var(--principal-color);
+    background-color: var(--bg-button);
+
+    transition: transform 0.2s ease-in-out;
+}
+
+.contato:hover{
+    transform: scale(1.2);
+}
+
+.contato a{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px;
+
+    font-size: 20px;
+    font-weight: 400;
+    font-family: Enwicken Typeface;
+}
+
+.contato img{
+    width: 27px;
+    height: 24px;
+    margin: 10px;
 }
 
 
@@ -245,6 +378,12 @@
         border: 80px solid transparent;
         border-bottom: 80px solid #9358F7;
         border-right: 80px solid #9358F7;
+    }
+
+    .principal__languages{
+        align-self: end;
+        justify-self: center;
+        margin: 10px;
     }
     
 }

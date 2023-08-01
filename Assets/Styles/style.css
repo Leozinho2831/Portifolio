@@ -6,19 +6,28 @@
 :root{
     --preto: #000000;
     --branco: #ffffff;
+    --hover: #9358f7;
+
     --body: #121212;
     --bg: #151515;
     --bg-scroll-bar: #1a1a1a;
-    --border: #272727;
     --bg-button: #272727;
+
     --gradient-1: #D004D9;
     --gradient-2: #9358f7;
     --gradient-3: #10D7E2;
+
     --principal-color: #00D2DF;
-    --border-icon: #02BBC5;
-    --hover: #9358f7;
+
     --title: #e7e7e7;
     --text: #C4C4C4;
+
+    --border: #272727;
+    --border-icon: #02BBC5;
+
+    --gradient-git-1: #D24074;
+    --gradient-git-2: #6518B4;
+
     --gradient-instagram-1: #7638FA;
     --gradient-instagram-2: #D300C5C2;
     --gradient-instagram-3: #FF0069;
