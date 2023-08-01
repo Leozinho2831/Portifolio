@@ -78,7 +78,6 @@ html{
 }
 
 body{
-    font-family: 'Mulish', sans-serif;
     background-color: var(--body);
 
     transition: 0.3s ease-in-out;

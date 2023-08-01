@@ -22,7 +22,7 @@
         <nav class="header__nav">
             <ul class="header__links">
                 <li>
-                    <a href="#">Sobre mim</a>
+                    <a href="#sobre-mim">Sobre mim</a>
                 </li>
                 <li>
                     <a href="#">Currículo</a>
@@ -38,7 +38,7 @@
             </ul>
         </nav>
     </header>
-    <div class="content">
+    <div class="content" id="home">
         <nav class="sidenav">
             <ul class="sidenav__links">
                 <li>
@@ -46,7 +46,7 @@
                         <svg fill="#00d2df" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 256 256"><path d="M218.83,103.77l-80-75.48a1.14,1.14,0,0,1-.11-.11,16,16,0,0,0-21.53,0l-.11.11L37.17,103.77A16,16,0,0,0,32,115.55V208a16,16,0,0,0,16,16H96a16,16,0,0,0,16-16V160h32v48a16,16,0,0,0,16,16h48a16,16,0,0,0,16-16V115.55A16,16,0,0,0,218.83,103.77ZM208,208H160V160a16,16,0,0,0-16-16H112a16,16,0,0,0-16,16v48H48V115.55l.11-.1L128,40l79.9,75.43.11.1Z"></path></svg>
                     </div>
                     <div class="sidenav__text">
-                        <a href="#">Home</a>
+                        <a href="#home">Home</a>
                     </div>
                 </li>
                 <li>
@@ -69,9 +69,59 @@
         </nav>
         <main class="principal">
             <div class="principal__name">
-                <h1>Olá, Sou o</h1>
-                <h2>&lt;/Leonardo Reis Ferraz&gt;</h2>
-                <h3>Desenvolvedor <span>Front-End</span></h3>
+                <div>
+                    <h1>Olá, Sou o</h1>
+                    <h2>&lt;/Leonardo Reis Ferraz&gt;</h2>
+                    <h3>Desenvolvedor <span>Front-End</span></h3>
+                </div>
+            </div>
+            <div class="principal__image">
+                <figure class="principal__foto">
+                    <div class="barras-1">
+                        <div></div>
+                        <div></div>
+                    </div>
+                        <img src="Assets/Images/Leonardo Reis Ferraz.jpeg" alt="Leonardo Reis Ferraz">
+                    <div class="barras-2">
+                        <div></div>
+                        <div></div>
+                    </div>
+                </figure>
+            </div>
+            <div class="principal__image-1200">
+                <div class="moldura"></div>
+                <figure class="principal__foto-1200">
+                    <img src="Assets/Images/Leonardo Reis Ferraz.jpeg" alt="Leonardo Reis Ferraz">
+                    <div class="triangulo"></div>
+                </figure>
+            </div>
+            <section class="principal__infos" id="sobre-mim">
+                <h1>Sobre mim</h1>
+                <p>
+                    Olá, atualmente sou estudante do ensino médio, 
+                    estou com dedicação nos estudos de programação em busca da progressão e aprendizado, 
+                    trazendo assim a correção de vários problemas. 
+                    Pretendo cursar Sistema da informação e Analise e desenvolvimento de sistemas, 
+                    mas continuarei meus estudos em mente que sempre estamos em constante aprendizado.
+                </p>
+            </section>
+            
+            <div class="principal__skills">
+                <h1>Main Skills</h1>
+                <div class="skills__icons">
+                    <img src="Assets/Images/Components/Html 5.svg" alt="Html5">
+                    <img src="Assets/Images/Components/Css 3.svg" alt="Css3">                      
+                </div>
+                <div class="skills__table">
+                    <p align="center">
+                        <img align="center" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Leozinho2831&show_icons=true&theme=tokyonight&layout=compact" alt="Top Langs">
+                    </p>
+                </div>
+            </div>
+            <div class="principal__languages">
+                <h1>Languages</h1>
+                <h2>  EN Básico</h2>
+                <h2> &#1F601 PT-Br Falante Nativo</h2>
             </div>
         </main>
     </div>

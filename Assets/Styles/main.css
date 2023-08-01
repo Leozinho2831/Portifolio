@@ -1,9 +1,16 @@
+.principal{
+    padding: 30px;
+}
+
+/* nome */
+
 .principal__name{
     display: flex;
     flex-direction: column;
-    align-items: start;
+    align-items: center;
     justify-content: center;
     padding: 40px;
+    grid-area: name;
 }
 
 .principal__name h1{
@@ -37,16 +44,207 @@
     color: var(--branco);
 }
 
-@media (min-width:750px){
+/* foto */
+
+.principal__image{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    grid-area: foto;
+}
+
+.principal__image-1200{
+    display: none;
+}
+
+.principal__foto{
+    position: relative;
+    width: 200px;
+}
+
+.principal__foto img{
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+    border: 1px solid #00d2df;
+}
+
+.barras-1 div, .barras-2 div{
+    background-color: #9358f7;
+    width: 100px;
+    height: 4px;
+}
+
+.barras-1{
+    position: absolute;
+    top: 15px;
+    z-index: -1;
+}
+
+.barras-2{
+    position: absolute;
+    bottom: 15px; 
+    right: 0;
+    z-index: -1;
+}
+
+.barras-1 div + div, 
+.barras-2 div + div{
+    margin: 7px 0 0 10px;
+}
+
+.principal__infos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 30px 0;
+    grid-area: sobre;
+}
+
+.principal__infos h1{
+    font-size: 30px;
+    font-weight: 400;
+    letter-spacing: 0.5px;
+    font-family: Enwicken Typeface;
+    color: var(--title);
+}
+
+.principal__infos p{
+    font-size: 16px;
+    font-weight: 400;
+    font-family: 'Mulish', sans-serif;
+    color: var(--text);
+
+    width: 70%;
+    margin: 10px 0 0 0;
+}
+
+/* skills */
+
+.principal__skills{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    grid-area: skills;
+}
+
+.principal__skills h1{
+    font-size: 30px;
+    font-weight: 400;
+    letter-spacing: 0.5px;
+    font-family: Enwicken Typeface;
+    color: var(--title);
+}
+
+.skills__icons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 102px;
+    gap: 40px;
+    margin: -8px 0;
+}
+
+.skills__icons img{
+    width: 50px;
+    height: 54px;
+}
+
+/* languages */
+
+.principal__languages{
+    grid-area: languages;
+    align-self: center;
+    justify-self: center;
+}
+
+.principal__laguages h1{
+    color: var(--title);
+}
+
+
+@media (min-width:950px){
 
     .principal{
+        display: grid;
         grid-area: main;
+        grid-template: 
+        "name name"
+        "sobre foto"
+        "skills languages"
+        "skills contato"
+        "projetos-1 projetos-2"
+        / 1fr 1fr;
+    }
+
+    .principal__infos{
+        justify-self: center;
+        align-self: center;
+        width: 100%;
     }
 
 }
 
 @media (min-width: 1200px){
 
+    .principal{
+        grid-template: 
+        "name foto"
+        "sobre foto"
+        "skills languages"
+        "skills contato"
+        "projetos projetos"
+        / 1fr 1fr;
+    }
 
+    /* foto */
+
+    .principal__image{
+        display: none;
+    }
+
+    .principal__image-1200{
+        display: flex;
+        align-items: center;
+        justify-content: start;
+        grid-area: foto;
+    }
+
+    .moldura{
+        width: 250px;
+        height: 510px;
+
+        border: 60px solid var(--principal-color);
+        background: transparent;
+    }
+
+    .principal__foto-1200{
+        display: flex;
+        align-items: end;
+        justify-content: end;
+        position: absolute;
+        margin: 0 0 0 60px;
+    }
+
+    .principal__foto-1200 img{
+        z-index: 1;
+        width: 400px;
+        height: 340px;
+    }
+
+    .triangulo{
+        width: 0; height: 0;
+        z-index: 2;
+        position: absolute;
+
+        background-color: transparent;
+        border: 80px solid transparent;
+        border-bottom: 80px solid #9358F7;
+        border-right: 80px solid #9358F7;
+    }
     
 }
