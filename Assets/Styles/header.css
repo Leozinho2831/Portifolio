@@ -38,14 +38,14 @@
 }
 
 .header__nav{
-    position: absolute;
+    position: relative;
     right: 0;
     top: 14vh;
     padding: 30px 30px 0 30px;
 
     background-color: var(--bg);
     border: 2px solid var(--border);
-    transform: translate(100%);
+    transform: translateX(100%);
 }
 
 .header__links li{
