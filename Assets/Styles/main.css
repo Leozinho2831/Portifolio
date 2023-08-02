@@ -376,7 +376,7 @@
     height: 44px;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     padding: 10px;
     margin: 20px 0;
 
@@ -389,11 +389,6 @@
 .projetos figure img:hover, 
 .projetos__button:hover{
     transform: scale(1.1);
-}
-
-.projetos__button img{
-    width: 24px;
-    height: 24px;
 }
 
 .projetos__button span{
