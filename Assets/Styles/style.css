@@ -53,6 +53,11 @@
     format(truetype);
 }
 
+@font-face {
+    font-family: Pamuci bold;
+    src: url(../Fonts/Pamuci\ Bold.ttf);
+}
+
 @keyframes textAnimation {
     0% {
         opacity: 0;

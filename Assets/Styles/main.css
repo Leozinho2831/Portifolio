@@ -148,7 +148,6 @@
     width: 40px;
     height: 102px;
     gap: 40px;
-    margin: -8px 0;
 }
 
 .skills__icons img{
@@ -164,7 +163,6 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin: 15px;
 }
 
 .principal__languages h1{
@@ -331,20 +329,22 @@
     max-width: 100%;
     min-width: 270px;
     min-height: 200px;
+
+    transition: transform 0.2s ease-in-out;
 }
 
 .projetos figure img:nth-of-type(2){
     display: none;
 }
 
-.projetos h2{
+.projetos__text h2{
     font-size: 25px;
     font-weight: 400;
     color: var(--title);
     font-family: Enwicken Typeface;
 }
 
-.projetos p{
+.projetos__text p{
     font-size: 15px;
     font-weight: 400;
     font-family: 'Mulish', sans-serif;
@@ -354,7 +354,7 @@
     margin: 5px 0;
 }
 
-.projetos h3{
+.projetos__text h3{
     font-size: 18px;
     font-weight: 400;
     font-family: 'Mulish', sans-serif;
@@ -378,10 +378,17 @@
     align-items: center;
     justify-content: space-between;
     padding: 10px;
-    margin: 5px 0 20px 0;
+    margin: 20px 0;
 
     border: 1px solid var(--principal-color);
     background-color: var(--bg-button);
+
+    transition: transform 0.2s ease-in-out;
+}
+
+.projetos figure img:hover, 
+.projetos__button:hover{
+    transform: scale(1.1);
 }
 
 .projetos__button img{
@@ -401,6 +408,7 @@
 
     .principal{
         display: grid;
+        gap: 20px;
         grid-area: main;
         grid-template: 
         "name name"

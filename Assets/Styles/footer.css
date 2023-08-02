@@ -1,4 +1,64 @@
+.footer{
+    width: 100%;
+    height: 100%;
+    padding: 30px;
 
+    border-top: 2px solid var(--border);
+    color: var(--title);
+}
+
+.footer__cursos h1{
+    grid-column: span 2;
+
+    font-size: 50px;
+    font-weight: 700;
+    font-family: Pamuci bold;
+}
+
+.footer__cursos{
+    display: grid;
+    align-items: start;
+    justify-content: start;
+    gap: 10px;
+    grid-template-columns: 1fr 1fr;
+}
+
+.footer__cursos div h2{
+    font-size: 20px;
+    font-weight: 700;
+    font-family: Pamuci bold;
+}
+
+.footer__cursos div p,
+.footer__cursos div h3{
+    margin: 10px 0;
+
+    font-size: 15px;
+    font-weight: 300;
+    font-family: 'Mulish', sans-serif;
+}
+
+.footer__cursos div{
+    min-width: 100px;
+    max-width: 300px;
+    min-height: 100px;
+    max-height: 200px;
+    padding: 15px;
+
+    border: 1px solid var(--title);
+    border-radius: 5px;
+    background-color: var(--bg-button);
+}
+
+/* modificar com novo curso */
+
+.footer__cursos div:nth-of-type(2),
+.footer__cursos div:nth-of-type(3){
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
 
 @media (min-width:750px){
 
@@ -8,6 +68,41 @@
 
 @media (min-width: 1200px){
 
+    .footer{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
 
+    .footer__cursos h1{
+        grid-column: span 3;
+    }
     
+    .footer__cursos{
+        width: 80%;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 30px;
+    }
+    
+}
+
+@media (max-width: 600px){
+
+    .footer__cursos h1{
+        text-align: center;
+    }
+
+    .footer__cursos{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .footer__cursos div{
+        max-width: 80%;
+        padding: 10px;
+        margin: 15px 0;
+    }
+
 }
