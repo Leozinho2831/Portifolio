@@ -14,7 +14,7 @@
 }
 
 .principal__name h1{
-    font-style: 24px;
+    font-size: 24px;
     font-weight: 400;
     letter-spacing: 0.5px;
     font-family: Pamuci;
@@ -93,6 +93,8 @@
 .barras-2 div + div{
     margin: 7px 0 0 10px;
 }
+
+/* sobre mim */
 
 .principal__infos{
     display: flex;
@@ -183,6 +185,8 @@
     margin: 10px 0 0 0;
 }
 
+/* contato */
+
 .principal__contato{
     grid-area: contato;
     display: flex;
@@ -194,7 +198,7 @@
 .contato__buttons{
     display: flex;
     gap: 40px;
-    margin: 15px;
+    margin: 20px 0;
 }
 
 .border-instagram,
@@ -214,7 +218,7 @@
 .border-instagram:hover,
 .border-linkedin:hover,
 .border-github:hover{
-    transform: scale(1.2);
+    transform: scale(1.1);
 }
 
 .border-instagram{
@@ -223,7 +227,7 @@
         var(--gradient-instagram-2),
         var(--gradient-instagram-3),
         var(--gradient-instagram-4),
-        var(--gradient-instagram-5));
+        var(--gradient-instagram-5)); 
 }
 
 .border-linkedin{
@@ -279,13 +283,10 @@
 }
 
 .contato:hover{
-    transform: scale(1.2);
+    transform: scale(1.1);
 }
 
-.contato a{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+.contato span{
     margin: 10px;
 
     font-size: 20px;
@@ -299,6 +300,102 @@
     margin: 10px;
 }
 
+/* projetos */
+
+.principal__projetos{
+    grid-area: projetos;
+}
+
+.principal__projetos h1{
+    margin: 30px;
+    
+    font-size: 30px;
+    font-weight: 400;
+    font-family: Enwicken Typeface;
+    color: var(--title);
+    text-align: center;
+}
+
+.projetos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.projetos figure{
+    width: 100%;
+}
+
+.projetos figure img{
+    max-width: 100%;
+    min-width: 270px;
+    min-height: 200px;
+}
+
+.projetos figure img:nth-of-type(2){
+    display: none;
+}
+
+.projetos h2{
+    font-size: 25px;
+    font-weight: 400;
+    color: var(--title);
+    font-family: Enwicken Typeface;
+}
+
+.projetos p{
+    font-size: 15px;
+    font-weight: 400;
+    font-family: 'Mulish', sans-serif;
+    color: var(--text);
+    
+    width: 70%;
+    margin: 5px 0;
+}
+
+.projetos h3{
+    font-size: 18px;
+    font-weight: 400;
+    font-family: 'Mulish', sans-serif;
+    color: var(--principal-color);
+    margin: 5px 0;
+}
+
+.projetos__text{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    width: 100%;
+    margin: 20px 0 20px 0;
+}
+
+.projetos__button{
+    width: 156px;
+    height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    margin: 5px 0 20px 0;
+
+    border: 1px solid var(--principal-color);
+    background-color: var(--bg-button);
+}
+
+.projetos__button img{
+    width: 24px;
+    height: 24px;
+}
+
+.projetos__button span{
+    font-size: 20px;
+    font-weight: 400;
+    font-family: Enwicken Typeface;
+    color: var(--principal-color);
+}
+
 
 @media (min-width:950px){
 
@@ -310,14 +407,30 @@
         "sobre foto"
         "skills languages"
         "skills contato"
-        "projetos-1 projetos-2"
+        "projetos projetos"
         / 1fr 1fr;
     }
+
+    /* sobre mim */
 
     .principal__infos{
         justify-self: center;
         align-self: center;
         width: 100%;
+    }
+
+    /* projetos */
+
+    .principal__projetos{
+        display: grid;
+        align-items: center;
+        justify-content: center;
+        grid-template-columns: 1fr 1fr;
+        gap: 0 30px;
+    }
+
+    .principal__projetos h1{
+        grid-column: span 2;
     }
 
 }
@@ -380,10 +493,50 @@
         border-right: 80px solid #9358F7;
     }
 
+    /* languages */
+
     .principal__languages{
         align-self: end;
         justify-self: center;
         margin: 10px;
     }
     
+}
+
+@media (max-width:500px){
+
+    /* name */
+
+    .principal__name{
+        text-align: center;
+    }
+
+    /* sobre */
+    
+    .principal__infos p{
+        overflow-x: auto;
+
+        column-count: 2;
+        column-gap: 20px;
+
+        max-height: 250px;
+        width: 90%;
+    }
+
+}
+
+@media (max-width:330px){
+
+    .projetos figure img:nth-of-type(1){
+        display: none;
+    }
+
+    .projetos figure img:nth-of-type(2){
+        display: block;
+    }
+
+    .projetos figure img{
+        min-width: 200px;
+    }
+
 }

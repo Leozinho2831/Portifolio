@@ -68,8 +68,16 @@
 }
 
 ::-webkit-scrollbar{
-    color: var(--principal-color);
-    background: var(--bg-scroll-bar);
+    background-color: var(--bg-scroll-bar);
+    width: 10px;
+    
+}
+
+::-webkit-scrollbar-thumb{
+    width: 10px;
+
+    background-color: var(--principal-color);
+    border-radius: 5px;
 }
 
 *{
@@ -89,6 +97,7 @@ html{
 body{
     background-color: var(--body);
 
+    overflow-x: hidden;
     transition: 0.3s ease-in-out;
 }
 
