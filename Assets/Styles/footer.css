@@ -19,7 +19,7 @@
     display: grid;
     align-items: start;
     justify-content: start;
-    gap: 10px;
+    gap: 20px;
     grid-template-columns: 1fr 1fr;
 }
 
@@ -61,8 +61,11 @@
 }
 
 @media (min-width:750px){
-
-
+    .footer{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        }
 
 }
 
