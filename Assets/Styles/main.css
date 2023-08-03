@@ -549,12 +549,6 @@
 
 @media (max-width:500px){
 
-    /* name */
-
-    .principal__name{
-        text-align: center;
-    }
-
     /* sobre */
     
     .principal__infos p{
