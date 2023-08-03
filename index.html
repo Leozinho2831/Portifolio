@@ -14,7 +14,7 @@
 <body>
     <header class="header">
         <h1>&lt;L/F&gt;</h1>
-        <menu class="header__menu">
+        <menu class="header__menu" onclick="mobileMenu()">
             <div></div>
             <div></div>
             <div></div>
@@ -28,16 +28,34 @@
                     <a href="#">Currículo</a>
                 </li>
                 <li>
-                    <div class="header__button">
+                    <div>
                         <input type="checkbox" id="checkbox">
-                        <label for="checkbox" class="header__checkbox">
-                            <div class="checkbox-background"></div>
+                        <label for="checkbox" class="header__checkbox" id="mode">
+                            <div class="checkbox-background" ></div>
                         </label>
                     </div>
                 </li>
             </ul>
         </nav>
     </header>
+    <nav class="header__mobile">
+        <ul class="mobile__links">
+            <li>
+                <a href="#sobre-mim">Sobre mim</a>
+            </li>
+            <li>
+                <a href="#">Currículo</a>
+            </li>
+            <li>
+                <div class="mobile__button">
+                    <input type="checkbox" id="check-box">
+                    <label for="check-box" class="mobile__checkbox" id="mode-mobile">
+                        <div class="background-checkbox"></div>
+                    </label>
+                </div>
+            </li>
+        </ul>
+    </nav>
     <div class="content" id="home">
         <nav class="sidenav">
             <ul class="sidenav__links">
@@ -214,5 +232,7 @@
             </div>
         </section>
     </footer>
+    <script src="Assets/Javascript/Menu.js"></script>
+    <script src="Assets/Javascript/Dark-mode.js"></script>
 </body>
 </html>

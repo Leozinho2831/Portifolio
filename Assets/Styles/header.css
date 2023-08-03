@@ -15,6 +15,7 @@
     color: var(--principal-color);
     font-family: Enwicken Typeface;
     font-weight: 400;
+    font-size: 35px;
 
     transition: color 0.2s ease-in-out;
 }
@@ -24,6 +25,8 @@
     flex-direction: column;
     align-items: end;
     gap: 10px;
+
+    cursor: pointer;
 }
 
 .header__menu div{
@@ -38,14 +41,7 @@
 }
 
 .header__nav{
-    position: absolute;
-    right: 0;
-    top: 14vh;
-    padding: 30px 30px 0 30px;
-
-    background-color: var(--bg);
-    border: 2px solid var(--border);
-    transform: translateX(100%);
+    display: none;
 }
 
 .header__links li{
@@ -56,22 +52,47 @@
     padding: 0 0 30px 0;
 }
 
-.header__links a{
-    font-size: 20px;
+.header__links a, .mobile__links a{
+    font-size: 30px;
     font-family: Enwicken Typeface;
 
     transition: color 0.2s ease-in-out;
 }
 
-.header h1:hover, .header__links a:hover{
+.header h1:hover, 
+.header__links a:hover,
+.mobile__links a:hover{
     color: var(--hover);
 }
 
-#checkbox{
+.header__mobile{
+    display: none;
+    padding: 30px;
+
+    color: var(--branco);
+    background-color: var(--bg);
+    border-bottom: 2px solid var(--border);
+}
+
+.mobile__links{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.view__menu{
+    display: block;
+}
+
+#checkbox,
+#check-box{
     display: none;
 }
 
-.header__checkbox{
+.header__checkbox,
+.mobile__checkbox{
     display: block;
     height: 45px;
     width: 45px;
@@ -83,11 +104,13 @@
     transition: border 0.2s ease-in-out;
 }
 
-.header__checkbox:hover{
+.header__checkbox:hover,
+.mobile__checkbox:hover{
     border: 1px solid var(--hover);
 }
 
-.checkbox-background{
+.checkbox-background,
+.background-checkbox{
     background-image: url(../Images/Components/Sun.svg);
     background-size: 30px 30px;
     background-repeat: no-repeat;
@@ -95,7 +118,8 @@
     height: 100%;
 }
 
-#checkbox:checked + .header__checkbox .checkbox-background{
+#checkbox:checked + .header__checkbox .checkbox-background,
+#check-box:checked + .mobile__checkbox .background-checkbox{
     background-image: url(../Images/Components/Moon.svg);
 }
 
@@ -111,6 +135,7 @@
     }
 
     .header__nav{
+        display: flex;
         flex-direction: row;
         position: relative;
         top: 0;
@@ -120,6 +145,10 @@
         background-color: transparent;
 
         transform: translate(0);
+    }
+
+    .header__mobile{
+        display: none;
     }
 
     .header__links{

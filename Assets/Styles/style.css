@@ -33,6 +33,10 @@
     --gradient-instagram-3: #FF0069;
     --gradient-instagram-4: #FF7A00;
     --gradient-instagram-5: #FFD600;
+
+    --dark-body: #f9f9f9;
+    --dark-title: #1c1818;
+    --dark-text: #757575;
 }
 
 @font-face {
@@ -104,6 +108,10 @@ body{
 
     overflow-x: hidden;
     transition: 0.3s ease-in-out;
+}
+
+body.dark{
+    background-color: var(--dark-body);
 }
 
 a{

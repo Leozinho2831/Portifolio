@@ -21,6 +21,12 @@
     color: var(--branco);
 }
 
+.dark .principal__name h1,
+.dark .principal__name h3,
+.dark .principal__name h3 span{
+    color: var(--dark-title);
+}
+
 .principal__name h2{
     font-size: 24px;
     font-weight: 400;
@@ -113,6 +119,10 @@
     color: var(--title);
 }
 
+.dark .principal__infos h1{
+    color: var(--dark-title);
+}
+
 .principal__infos p{
     font-size: 16px;
     font-weight: 400;
@@ -121,6 +131,10 @@
 
     width: 70%;
     margin: 10px 0 0 0;
+}
+
+.dark .principal__infos p{
+    color: var(--dark-text)
 }
 
 /* skills */
@@ -139,6 +153,10 @@
     letter-spacing: 0.5px;
     font-family: Enwicken Typeface;
     color: var(--title);
+}
+
+.dark .principal__skills h1{
+    color: var(--dark-title);
 }
 
 .skills__icons{
@@ -171,7 +189,11 @@
     letter-spacing: 0.5px;
     font-family: Enwicken Typeface;
     color: var(--title);
-    
+}
+
+.dark .principal__languages h1,
+.dark .principal__languages h2{
+    color: var(--dark-title);
 }
 
 .principal__languages h2{
@@ -314,6 +336,10 @@
     text-align: center;
 }
 
+.dark .principal__projetos h1{
+    color: var(--dark-title);
+}
+
 .projetos{
     display: flex;
     flex-direction: column;
@@ -344,6 +370,10 @@
     font-family: Enwicken Typeface;
 }
 
+.projetos__text h2{
+    color: var(--dark-title);
+}
+
 .projetos__text p{
     font-size: 15px;
     font-weight: 400;
@@ -352,6 +382,10 @@
     
     width: 65%;
     margin: 5px 0;
+}
+
+.dark .projetos__text p{
+    color: var(--dark-text);
 }
 
 .projetos__text h3{
@@ -383,12 +417,13 @@
     border: 1px solid var(--principal-color);
     background-color: var(--bg-button);
 
-    transition: transform 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
 }
 
 .projetos figure img:hover, 
 .projetos__button:hover{
     transform: scale(1.1);
+    border: 1px solid var(--hover);
 }
 
 .projetos__button span{
@@ -396,6 +431,12 @@
     font-weight: 400;
     font-family: Enwicken Typeface;
     color: var(--principal-color);
+
+    transition: color 0.2s ease-in-out;
+}
+
+.projetos__button span:hover{
+    color: var(--hover);
 }
 
 

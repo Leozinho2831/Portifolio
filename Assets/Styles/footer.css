@@ -4,6 +4,7 @@
     padding: 30px;
 
     border-top: 2px solid var(--border);
+    background-color: var(--bg);
     color: var(--title);
 }
 
