@@ -21,10 +21,10 @@
     color: var(--branco);
 }
 
-.dark .principal__name h1,
-.dark .principal__name h3,
-.dark .principal__name h3 span{
-    color: var(--dark-title);
+.light .principal__name h1,
+.light .principal__name h3,
+.light .principal__name h3 span{
+    color: var(--light-title);
 }
 
 .principal__name h2{
@@ -119,8 +119,8 @@
     color: var(--title);
 }
 
-.dark .principal__infos h1{
-    color: var(--dark-title);
+.light .principal__infos h1{
+    color: var(--light-title);
 }
 
 .principal__infos p{
@@ -133,8 +133,8 @@
     margin: 10px 0 0 0;
 }
 
-.dark .principal__infos p{
-    color: var(--dark-text)
+.light .principal__infos p{
+    color: var(--light-text)
 }
 
 /* skills */
@@ -155,8 +155,8 @@
     color: var(--title);
 }
 
-.dark .principal__skills h1{
-    color: var(--dark-title);
+.light .principal__skills h1{
+    color: var(--light-title);
 }
 
 .skills__icons{
@@ -191,9 +191,9 @@
     color: var(--title);
 }
 
-.dark .principal__languages h1,
-.dark .principal__languages h2{
-    color: var(--dark-title);
+.light .principal__languages h1,
+.light .principal__languages h2{
+    color: var(--light-title);
 }
 
 .principal__languages h2{
@@ -336,8 +336,8 @@
     text-align: center;
 }
 
-.dark .principal__projetos h1{
-    color: var(--dark-title);
+.light .principal__projetos h1{
+    color: var(--light-title);
 }
 
 .projetos{
@@ -371,7 +371,7 @@
 }
 
 .projetos__text h2{
-    color: var(--dark-title);
+    color: var(--light-title);
 }
 
 .projetos__text p{
@@ -384,8 +384,8 @@
     margin: 5px 0;
 }
 
-.dark .projetos__text p{
-    color: var(--dark-text);
+.light .projetos__text p{
+    color: var(--light-text);
 }
 
 .projetos__text h3{
