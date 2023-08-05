@@ -53,8 +53,8 @@
 
 /* modificar com novo curso */
 
-.footer__cursos div:nth-of-type(2),
-.footer__cursos div:nth-of-type(3){
+.footer__cursos div:nth-of-type(3),
+.footer__cursos div:nth-of-type(4){
     display: flex;
     align-items: center;
     justify-content: center;
