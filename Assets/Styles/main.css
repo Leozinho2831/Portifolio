@@ -370,7 +370,7 @@
     font-family: Enwicken Typeface;
 }
 
-.projetos__text h2{
+.light .projetos__text h2{
     color: var(--light-title);
 }
 
