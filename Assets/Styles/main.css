@@ -231,6 +231,7 @@
     justify-content: center;
 
     border-radius: 100%;
+    box-shadow: 1px 1px 2px 1px var(--shadow);
 
     transition: transform 0.2s ease-in-out;
 }
@@ -356,6 +357,7 @@
     min-width: 270px;
     min-height: 200px;
 
+    box-shadow: 1px 1px 2px var(--shadow);
     transition: transform 0.2s ease-in-out;
 }
 
@@ -416,14 +418,16 @@
 
     border: 1px solid var(--principal-color);
     background-color: var(--bg-button);
+    box-shadow: 1px 1px 2px var(--shadow);
 
     transition: all 0.2s ease-in-out;
 }
 
 .projetos figure img:hover, 
 .projetos__button:hover{
-    transform: scale(1.1);
+    transform: scale(1.05);
     border: 1px solid var(--hover);
+    
 }
 
 .projetos__button span{
@@ -435,7 +439,7 @@
     transition: color 0.2s ease-in-out;
 }
 
-.projetos__button span:hover{
+.projetos__button:hover span{
     color: var(--hover);
 }
 

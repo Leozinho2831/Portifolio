@@ -49,6 +49,7 @@
     border: 1px solid var(--title);
     border-radius: 5px;
     background-color: var(--bg-button);
+    box-shadow: 1px 1px 2px 1px var(--shadow);
 }
 
 /* modificar com novo curso */

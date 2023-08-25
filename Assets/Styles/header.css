@@ -59,7 +59,6 @@
     transition: color 0.2s ease-in-out;
 }
 
-.header h1:hover, 
 .header__links a:hover,
 .mobile__links a:hover{
     color: var(--hover);
