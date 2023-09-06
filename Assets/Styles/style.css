@@ -78,12 +78,29 @@
 }
 
 ::-webkit-scrollbar{
-    background-color: var(--bg-scroll-bar);
     width: 10px;
-    
+}
+
+::-webkit-scrollbar-track{
+    background-color: var(--bg-scroll-bar);
 }
 
 ::-webkit-scrollbar-thumb{
+    width: 10px;
+
+    background-color: var(--principal-color);
+    border-radius: 5px;
+}
+
+p::-webkit-scrollbar{
+    width: 10px;
+}
+
+p::-webkit-scrollbar-track{
+    background-color: transparent;
+}
+
+p::-webkit-scrollbar-thumb{
     width: 10px;
 
     background-color: var(--principal-color);

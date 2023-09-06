@@ -124,7 +124,7 @@
 }
 
 .principal__infos p{
-    font-size: 16px;
+    font-size: clamp(8px, 12px + 1vw, 16px);
     font-weight: 400;
     font-family: 'Mulish', sans-serif;
     color: var(--text);
@@ -142,6 +142,7 @@
 .principal__skills{
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
     grid-area: skills;
@@ -161,10 +162,10 @@
 
 .skills__icons{
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    width: 40px;
-    height: 102px;
+    margin: 20px 0;
     gap: 40px;
 }
 
@@ -217,6 +218,8 @@
 
 .contato__buttons{
     display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
     gap: 40px;
     margin: 20px 0;
 }
@@ -443,7 +446,6 @@
     color: var(--hover);
 }
 
-
 @media (min-width:950px){
 
     .principal{
@@ -471,7 +473,7 @@
 
     .principal__projetos{
         display: grid;
-        align-items: center;
+        align-items: start;
         justify-content: center;
         grid-template-columns: 1fr 1fr;
         gap: 0 30px;
@@ -481,6 +483,9 @@
         grid-column: span 2;
     }
 
+    .projetos p{
+        width: 100%;
+    }
 }
 
 @media (min-width: 1200px){
@@ -548,7 +553,6 @@
         justify-self: center;
         margin: 10px;
     }
-    
 }
 
 @media (max-width:500px){
@@ -556,15 +560,11 @@
     /* sobre */
     
     .principal__infos p{
-        overflow-x: auto;
-
-        column-count: 2;
-        column-gap: 20px;
+        overflow-y: auto;
 
         max-height: 250px;
         width: 90%;
     }
-
 }
 
 @media (max-width:330px){
@@ -580,5 +580,4 @@
     .projetos figure img{
         min-width: 200px;
     }
-
 }
