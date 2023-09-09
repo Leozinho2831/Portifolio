@@ -1,5 +1,8 @@
 .principal{
-    padding: 30px;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 /* nome */
@@ -511,6 +514,7 @@
         align-items: center;
         justify-content: start;
         grid-area: foto;
+        justify-self: center;
     }
 
     .moldura{
