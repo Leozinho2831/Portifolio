@@ -569,6 +569,10 @@
         max-height: 250px;
         width: 90%;
     }
+
+    .projetos__text p{
+        width: 100%;
+    }
 }
 
 @media (max-width:330px){
