@@ -1,1 +1,8 @@
-- # Portifólio
+# Portifólio
+### Leonardo Reis Ferraz
+
+- Este é meu portifólio, sou o leonardo, desenvolvedor front-end, que estou a buscar conhecimento a cada dia que se passa, pois acredito que um bom desenvolvedor é formado através de muito conhecimento e vivencia. Tenho vários projetos até o momento de agora, nenhum muito exagerado e estravagante, como algo que mudaria a visão de como olhar para algo, no entanto, sempre busco o melhor de minha parte para entregar os melhores projetos. Buscando por um projeto bem estruturado em quesitos de código e facilidade para quem for utilizar.
+
+- Minhas habilidades são com Html5 e Css3, e tenho conhecimento sobre o pré processamento Sass também, não é uma tecnologia que uso há muito tempo como o Html e Css, entretanto, é algo que tenho uma certa facilidade ao manusear. Também comecei a estudar Javascript agora, meus conhecimentos sobre a linguagem são breves, mas fiz alguns projetos de tamanho interesse, e o projeto que mais me orgulho que fiz com Javascript é o Escolha, uma vez que foi pensado totalmente por mim, e com uns conceitos matemáticos visto por mim na internet, pude criar um algoritimo no qual lhe da a sujestão do que você deve fazer perante suas emoções com aquilo. Peço perdão se você pensou que era algo grandioso quando abriu o projeto, mas para mim iniciante, acho que foi uma grande evolução um projeto pensado por mim e executado, e reforçando, de deveras utilidade eu posso dizer.
+
+#### Agradeço a apoio de todos em minha caminhada, pretendo continuar buscando ainda mais conhecimento para projetos ainda mais interessantes.
